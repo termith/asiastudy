@@ -1,13 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    Flaskr
-    ~~~~~~
-
-    A microblog example application written as Flask tutorial with
-    Flask and sqlite3.
-
-    :copyright: (c) 2014 by Armin Ronacher.
-    :license: BSD, see LICENSE for more details.
+    Main file for Kanji analyzer application
 """
 
 import os
@@ -16,7 +9,7 @@ from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash
 
 
-# create our little application :)
+# create our little application
 app = Flask(__name__)
 
 # Load default config and override config from an environment variable
@@ -65,7 +58,7 @@ def close_db(error):
 @app.route('/')
 def show_entries():
     db = get_db()
-    cur = db.execute('select title, text from entries order by id desc')
+    cur = db.execute('select * from entries where id=(select max(id) from entries)')
     entries = cur.fetchall()
     return render_template('show_entries.html', entries=entries)
 
@@ -75,8 +68,10 @@ def add_entry():
     if not session.get('logged_in'):
         abort(401)
     db = get_db()
-    db.execute('insert into entries (title, text) values (?, ?)',
-                 [request.form['title'], request.form['text']])
+#    db.execute('insert into entries (title, text) values (?, ?)',
+#                 [request.form['title'], request.form['text']])
+
+    db.execute('insert into entries (text) values (?)', [request.form['text']])
     db.commit()
     flash('New entry was successfully posted')
     return redirect(url_for('show_entries'))
