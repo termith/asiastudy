@@ -1,8 +1,8 @@
 drop table if exists entries;
 create table entries (
     id integer primary key autoincrement,
-    text text not null,
-    clear_text text,
+    text not null,
+    clear_text,
     N1 integer,
     N2 integer,
     N3 integer,

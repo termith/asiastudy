@@ -12,12 +12,12 @@
   <ul class=entries>
   {% for entry in entries %}
     <li><h2>{{ entry.id }}</h2>
-    {{ entry.clear_text | safe }}
-    {{ entry.N1 | safe }}
-    {{ entry.N2 | safe }}
-    {{ entry.N3 | safe }}
-    {{ entry.N4 | safe }}
-    {{ entry.N5 | safe }}
+    <h3>{{ entry.clear_text | safe }}</h3>
+    <h3>N1: {{ entry.N1 | safe }}</h3>
+    <h3>N2: {{ entry.N2 | safe }}</h3>
+    <h3>N3: {{ entry.N3 | safe }}</h3>
+    <h3>N4: {{ entry.N4 | safe }}</h3>
+    <h3>N5: {{ entry.N5 | safe }}</h3>
 
   {% else %}
     <li><em>Unbelievable.  No entries here so far</em>
