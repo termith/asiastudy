@@ -1,4 +1,4 @@
-class Text:
+class Kanjies_text:
     def __init__(self, value):
         self.value = value
 
@@ -14,7 +14,7 @@ class Text:
         return self.value
 
     def __repr__(self):
-        return "Text({0})".format(self.value)
+        return "Kanjies_text({0})".format(self.value)
 
     def __len__(self):
         return len(self.value)
@@ -72,9 +72,9 @@ def take_string(file):
         return fd.read()
 
 
-def main():
-    input_text = Text(take_string('text_on_test'))
-    input_text.remove_spaces_from_text()
-    input_text.remove_kana_symbols()
-    print(input_text)
-    input_text.take_percent_count()
+# def main():
+#     input_text = Kanjies_text(take_string('text_on_test'))
+#     input_text.remove_spaces_from_text()
+#     input_text.remove_kana_symbols()
+#     print(input_text)
+#     input_text.take_percent_count()

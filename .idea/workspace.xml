@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="946ffcdf-1d1d-4dde-a5a5-8b0dce87de26" name="Default" comment="version 0.0.2 &#10;&#10;Features:&#10;1) Changed views for user &#10;&#10;Bugs:&#10;&#10;Others:&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flaskr/core/kanji_main.py" />
+    <list default="true" id="946ffcdf-1d1d-4dde-a5a5-8b0dce87de26" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/flaskr/core/kanji_main.py" afterPath="$PROJECT_DIR$/flaskr/kanji_main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/flaskr.py" afterPath="$PROJECT_DIR$/flaskr/flaskr.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/templates/show_entries.html" afterPath="$PROJECT_DIR$/flaskr/templates/show_entries.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flask_project.iws" />
@@ -26,10 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="flaskr.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="flaskr.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flaskr/flaskr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1620">
+            <state line="47" column="34" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.7532051" vertical-offset="0" max-vertical-offset="1860">
               <folding>
                 <element signature="e#78#87#0" expanded="true" />
               </folding>
@@ -37,10 +39,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kanji_main.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/flaskr/core/kanji_main.py">
+      <file leaf-file-name="kanji_main.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flaskr/kanji_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="45" selection-start="1680" selection-end="1680" vertical-scroll-proportion="0.9760956" vertical-offset="0" max-vertical-offset="1275">
+            <state line="36" column="41" selection-start="1144" selection-end="1144" vertical-scroll-proportion="0.0" vertical-offset="339" max-vertical-offset="1275">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schema.sql" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flaskr/schema.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="14" selection-start="118" selection-end="128" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_sqlite3.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Caches/PyCharm30/python_stubs/-1199943130/_sqlite3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="270" column="8" selection-start="8522" selection-end="8522" vertical-scroll-proportion="0.0" vertical-offset="2411" max-vertical-offset="15585">
               <folding />
             </state>
           </provider>
@@ -58,7 +78,7 @@
       <file leaf-file-name="show_entries.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flaskr/templates/show_entries.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="762" selection-end="762" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="495">
+            <state line="23" column="0" selection-start="778" selection-end="778" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="495">
               <folding />
             </state>
           </provider>
@@ -100,7 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/flaskr/templates/login.html" />
         <option value="$PROJECT_DIR$/flaskr/static/style.css" />
         <option value="$PROJECT_DIR$/flaskr/templates/layout.html" />
         <option value="$PROJECT_DIR$/flaskr/schema.sql" />
@@ -113,17 +132,18 @@
         <option value="$PROJECT_DIR$/flaskr/core/kanji_n4" />
         <option value="$PROJECT_DIR$/flaskr/core/kanji_n5" />
         <option value="$PROJECT_DIR$/flaskr/core/kanji_main" />
-        <option value="$PROJECT_DIR$/flaskr/flaskr.py" />
         <option value="$PROJECT_DIR$/flaskr/templates/show_entries.html" />
         <option value="$PROJECT_DIR$/flaskr/core/kanji_main.py" />
+        <option value="$PROJECT_DIR$/flaskr/kanji_main.py" />
+        <option value="$PROJECT_DIR$/flaskr/flaskr.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="539" />
-    <option name="y" value="226" />
-    <option name="width" value="2002" />
-    <option name="height" value="1060" />
+    <option name="x" value="151" />
+    <option name="y" value="22" />
+    <option name="width" value="2721" />
+    <option name="height" value="1330" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -219,6 +239,11 @@
     <option name="myPythonConsoleState">
       <console-settings />
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/flaskr" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.flaskr">
     <configuration default="false" name="flaskr" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -403,7 +428,11 @@
       <created>1394792639674</created>
       <updated>1394792639675</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="version 0.0.2 &#10;&#10;Features:&#10;&#10;Bugs:&#10;* add main core file&#10;&#10;Others:&#10;">
+      <created>1394793109656</created>
+      <updated>1394793109656</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -427,24 +456,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="539" y="226" width="2002" height="1060" extended-state="0" />
-    <editor active="false" />
+    <frame x="151" y="22" width="2721" height="1330" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293247" sideWeight="0.49968925" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.6706753" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16624558" sideWeight="0.8308511" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12194218" sideWeight="0.7966942" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39885715" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23274696" sideWeight="0.50069445" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16914894" sideWeight="0.49930555" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20330578" sideWeight="0.49930555" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.405954" sideWeight="0.49930555" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -466,37 +495,18 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="10000" />
     <MESSAGE value="version 0.0.1" />
     <MESSAGE value="version 0.0.2 &#10;&#10;Features:&#10;1) Changed views for user &#10;&#10;Bugs:&#10;&#10;Others:&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 0.0.2 &#10;&#10;Features:&#10;1) Changed views for user &#10;&#10;Bugs:&#10;&#10;Others:&#10;" />
+    <MESSAGE value="version 0.0.2 &#10;&#10;Features:&#10;&#10;Bugs:&#10;* add main core file&#10;&#10;Others:&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 0.0.2 &#10;&#10;Features:&#10;&#10;Bugs:&#10;* add main core file&#10;&#10;Others:&#10;" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm30/python_stubs/-1199943130/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3546" column="8" selection-start="123075" selection-end="123075" vertical-scroll-proportion="0.3320965" vertical-offset="53011" max-vertical-offset="84240">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/core/hiragana">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="1" selection-start="263" selection-end="263" vertical-scroll-proportion="0.94434136" vertical-offset="1186" max-vertical-offset="1785" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/core/katakana">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="1" selection-start="441" selection-end="441" vertical-scroll-proportion="0.94434136" vertical-offset="2071" max-vertical-offset="2670" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flaskr/core/symbols">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="1" selection-start="35" selection-end="35" vertical-scroll-proportion="0.47309834" vertical-offset="0" max-vertical-offset="539" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/schema.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="6" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flaskr/core/kanji_n1">
@@ -538,6 +548,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/templates/show_entries.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="778" selection-end="778" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="495">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/flaskr/templates/layout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="6" selection-start="500" selection-end="500" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="330">
@@ -545,26 +562,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/templates/show_entries.html">
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm30/python_stubs/-1199943130/_sqlite3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="762" selection-end="762" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="495">
+        <state line="270" column="8" selection-start="8522" selection-end="8522" vertical-scroll-proportion="0.0" vertical-offset="2411" max-vertical-offset="15585">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Python/3.3/lib/python/site-packages/flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="721" column="8" selection-start="31546" selection-end="31546" vertical-scroll-proportion="-0.24233128" vertical-offset="10598" max-vertical-offset="27345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/schema.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="14" selection-start="118" selection-end="128" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/kanji_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="41" selection-start="1144" selection-end="1144" vertical-scroll-proportion="0.0" vertical-offset="339" max-vertical-offset="1275">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flaskr/flaskr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1620">
+        <state line="47" column="34" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.7532051" vertical-offset="0" max-vertical-offset="1860">
           <folding>
             <element signature="e#78#87#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/core/kanji_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="45" selection-start="1680" selection-end="1680" vertical-scroll-proportion="0.9760956" vertical-offset="0" max-vertical-offset="1275">
-          <folding />
         </state>
       </provider>
     </entry>

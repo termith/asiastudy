@@ -3,7 +3,7 @@
   {% if session.logged_in %}
     <form action="{{ url_for('add_entry') }}" method=post class=add-entry>
       <dl>
-        <dt>Text:
+        <dt>Kanjies_text:
         <dd><textarea name=text rows=5 cols=40></textarea>
         <dd><input type=submit value=Analyze>
       </dl>
@@ -13,7 +13,7 @@
   {% for entry in entries %}
     <li><h2> Your text is: </h2>
     <h3>{{ entry.text }}</h3>
-    <li><h2> Text contains only kanjies symbol: </h2>
+    <li><h2> Kanjies_text contains only kanjies symbol: </h2>
     <h3>{{ entry.clear_text | safe }}</h3>
     <li><h2> List of kanjies: </h2>
     <h3>N1: {{ entry.N1 | safe }}</h3>

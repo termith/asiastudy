@@ -7,6 +7,8 @@ import os
 from sqlite3 import dbapi2 as sqlite3
 from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash
+import kanji_main
+from kanji_main import Kanjies_text
 
 # create our little application
 app = Flask(__name__)
@@ -53,12 +55,26 @@ def close_db(error):
     if hasattr(g, 'sqlite_db'):
         g.sqlite_db.close()
 
+def query_db(query, args=(), one=False):
+    """Method for DB connect."""
+    cur = get_db().execute(query, args)
+    rv = cur.fetchall()
+    cur.close()
+    return (rv[0] if rv else None) if one else rv
+
 
 @app.route('/')
 def show_entries():
     db = get_db()
     cur = db.execute('select * from entries where id=(select max(id) from entries)')
     entries = cur.fetchall()
+
+    a = Kanjies_text()
+    a = show_part_db('text')
+    a.remove_spaces_from_text()
+    clear_text =  a.remove_kana_symbols()
+    print(clear_text)
+
     return render_template('show_entries.html', entries=entries)
 
 
@@ -67,14 +83,14 @@ def add_entry():
     if not session.get('logged_in'):
         abort(401)
     db = get_db()
-#    db.execute('insert into entries (title, text) values (?, ?)',
-#                 [request.form['title'], request.form['text']])
-
     db.execute('insert into entries (text) values (?)', [request.form['text']])
     db.commit()
     flash('New entry was successfully posted')
     return redirect(url_for('show_entries'))
 
+def show_part_db(part):
+    for t in query_db('select * from entries where id=(select max(id) from entries)'):
+        return t[part]
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
