@@ -7,7 +7,6 @@ import os
 from sqlite3 import dbapi2 as sqlite3
 from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash
-import kanji_main
 from kanji_main import Kanjies_text
 
 # create our little application
@@ -68,13 +67,6 @@ def show_entries():
     db = get_db()
     cur = db.execute('select * from entries where id=(select max(id) from entries)')
     entries = cur.fetchall()
-
-    a = Kanjies_text()
-    a = show_part_db('text')
-    a.remove_spaces_from_text()
-    clear_text =  a.remove_kana_symbols()
-    print(clear_text)
-
     return render_template('show_entries.html', entries=entries)
 
 
@@ -86,6 +78,12 @@ def add_entry():
     db.execute('insert into entries (text) values (?)', [request.form['text']])
     db.commit()
     flash('New entry was successfully posted')
+
+    a = Kanjies_text(show_part_db('text'))
+    a.remove_spaces_from_text()
+    a.remove_kana_symbols()
+    db.execute('update entries set clear_text = (?) where id=(select max(id) from entries)', [a.value])
+    db.commit()
     return redirect(url_for('show_entries'))
 
 def show_part_db(part):

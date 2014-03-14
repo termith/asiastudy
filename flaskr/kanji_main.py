@@ -23,11 +23,11 @@ class Kanjies_text:
         self.value = self.value.replace("　", "").replace(" ", "")
 
     def remove_kana_symbols(self):
-        with open('katakana', 'r', encoding='utf-8') as fd:
+        with open('core/katakana', 'r', encoding='utf-8') as fd:
             katakana_list = fd.read().splitlines()
-        with open('hiragana', 'r', encoding='utf-8') as fd:
+        with open('core/hiragana', 'r', encoding='utf-8') as fd:
             hiragana_list = fd.read().splitlines()
-        with open('symbols', 'r', encoding='utf-8') as fd:
+        with open('core/symbols', 'r', encoding='utf-8') as fd:
             symbols_list = fd.read().splitlines()
         for items in katakana_list:
             self.value = self.value.replace(items, "")
