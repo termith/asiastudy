@@ -38,16 +38,13 @@ class Kanjies_text:
 
     def take_percent_count(self):
         total = len(self.value)
-        N5 = self.each_level_kanji('kanji_n5')
-        N4 = self.each_level_kanji('kanji_n4')
-        N3 = self.each_level_kanji('kanji_n3')
-        N2 = self.each_level_kanji('kanji_n2')
-        N1 = self.each_level_kanji('kanji_n1')
-        print("N1:", take_percent(total, N1))
-        print("N2:", take_percent(total, N2))
-        print("N3:", take_percent(total, N3))
-        print("N4:", take_percent(total, N4))
-        print("N5:", take_percent(total, N5))
+        N5 = self.each_level_kanji('core/kanji_n5')
+        N4 = self.each_level_kanji('core/kanji_n4')
+        N3 = self.each_level_kanji('core/kanji_n3')
+        N2 = self.each_level_kanji('core/kanji_n2')
+        N1 = self.each_level_kanji('core/kanji_n1')
+        return [take_percent(total, N1), take_percent(total, N2), take_percent(total, N3), take_percent(total, N4),
+                take_percent(total, N5)]
 
     def each_level_kanji(self, kanji_level_list):
         kanjis_this_level=0
@@ -64,17 +61,9 @@ class Kanjies_text:
 
 
 def take_percent(a, b):
-    return  "{0}%".format(round((b/a)*100))
+    return "{0}%".format(round((b/a)*100))
 
 
 def take_string(file):
     with open(file, 'r', encoding='utf-8') as fd:
         return fd.read()
-
-
-# def main():
-#     input_text = Kanjies_text(take_string('text_on_test'))
-#     input_text.remove_spaces_from_text()
-#     input_text.remove_kana_symbols()
-#     print(input_text)
-#     input_text.take_percent_count()

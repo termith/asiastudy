@@ -54,6 +54,7 @@ def close_db(error):
     if hasattr(g, 'sqlite_db'):
         g.sqlite_db.close()
 
+
 def query_db(query, args=(), one=False):
     """Method for DB connect."""
     cur = get_db().execute(query, args)
@@ -84,11 +85,18 @@ def add_entry():
     a.remove_kana_symbols()
     db.execute('update entries set clear_text = (?) where id=(select max(id) from entries)', [a.value])
     db.commit()
+    b = a.take_percent_count()
+    for i in range(5):
+        level = "N{0}".format(i+1)
+        db.execute('update entries set {} = (?) where id=(select max(id) from entries)'.format(level), [b[i]])
+        db.commit()
     return redirect(url_for('show_entries'))
+
 
 def show_part_db(part):
     for t in query_db('select * from entries where id=(select max(id) from entries)'):
         return t[part]
+
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():

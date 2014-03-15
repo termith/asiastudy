@@ -13,8 +13,6 @@
   {% for entry in entries %}
     <li><h2> Your text is: </h2>
     <h3>{{ entry.text }}</h3>
-    <li><h2> Kanjies_text contains only kanjies symbol: </h2>
-    <h3>{{ entry.clear_text | safe }}</h3>
     <li><h2> List of kanjies: </h2>
     <h3>N1: {{ entry.N1 | safe }}</h3>
     <h3>N2: {{ entry.N2 | safe }}</h3>
