@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="946ffcdf-1d1d-4dde-a5a5-8b0dce87de26" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/flask_project.iml" afterPath="$PROJECT_DIR$/.idea/flask_project.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/flaskr.py" afterPath="$PROJECT_DIR$/flaskr/flaskr.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/core/hiragana" afterPath="$PROJECT_DIR$/flaskr/core/hiragana" />
+    <list default="true" id="946ffcdf-1d1d-4dde-a5a5-8b0dce87de26" name="Default" comment="version 0.0.3&#10;&#10;Features:&#10;&#10;Bugs:&#10;&#10;Others:&#10;delete some codes strokes">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flaskr/core/hiragana" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flaskr/core/katakana" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flaskr/core/symbols" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/kanji_main.py" afterPath="$PROJECT_DIR$/flaskr/kanji_main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/templates/show_entries.html" afterPath="$PROJECT_DIR$/flaskr/templates/show_entries.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flask_project.iws" />
@@ -41,19 +40,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hiragana" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flaskr/core/hiragana">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="1" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="624" max-vertical-offset="1245">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="kanji_main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flaskr/kanji_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="40" selection-start="1663" selection-end="1663" vertical-scroll-proportion="1.7875648" vertical-offset="0" max-vertical-offset="1110">
+            <state line="96" column="24" selection-start="5081" selection-end="5081" vertical-scroll-proportion="3.2653062" vertical-offset="0" max-vertical-offset="1530">
               <folding />
             </state>
           </provider>
@@ -151,8 +141,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="31" />
-    <option name="y" value="-1058" />
+    <option name="x" value="17" />
+    <option name="y" value="22" />
     <option name="width" value="1440" />
     <option name="height" value="808" />
   </component>
@@ -461,7 +451,11 @@
       <created>1394793109656</created>
       <updated>1394793109656</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="version 0.0.3 &#10;&#10;Features:&#10;&#10;Bugs:&#10;&#10;Others:&#10;delete some codes strokes">
+      <created>1394879039268</created>
+      <updated>1394879039268</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -485,25 +479,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="31" y="-1058" width="1440" height="808" extended-state="0" />
+    <frame x="17" y="22" width="1440" height="808" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289855" sideWeight="0.49964765" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293247" sideWeight="0.49968925" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39885715" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32028985" sideWeight="0.5010571" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.405954" sideWeight="0.49930555" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293247" sideWeight="0.49968925" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.6706753" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18322763" sideWeight="0.7966942" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39885715" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.49964765" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5003524" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32122904" sideWeight="0.4989429" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.405954" sideWeight="0.49930555" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32028985" sideWeight="0.4989429" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.49964765" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -525,7 +519,8 @@
     <MESSAGE value="version 0.0.1" />
     <MESSAGE value="version 0.0.2 &#10;&#10;Features:&#10;1) Changed views for user &#10;&#10;Bugs:&#10;&#10;Others:&#10;" />
     <MESSAGE value="version 0.0.2 &#10;&#10;Features:&#10;&#10;Bugs:&#10;* add main core file&#10;&#10;Others:&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 0.0.2 &#10;&#10;Features:&#10;&#10;Bugs:&#10;* add main core file&#10;&#10;Others:&#10;" />
+    <MESSAGE value="version 0.0.3 &#10;&#10;Features:&#10;&#10;Bugs:&#10;&#10;Others:&#10;delete some codes strokes" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 0.0.3 &#10;&#10;Features:&#10;&#10;Bugs:&#10;&#10;Others:&#10;delete some codes strokes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -591,11 +586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/core/symbols">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="1" selection-start="35" selection-end="35" vertical-scroll-proportion="0.47309834" vertical-offset="0" max-vertical-offset="539" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flaskr/core/kanji_n1">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1219" column="1" selection-start="2439" selection-end="2439" vertical-scroll-proportion="0.6103896" vertical-offset="17956" max-vertical-offset="18555" />
@@ -642,6 +632,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/templates/show_entries.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="425" selection-end="425" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/flaskr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="44" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1950">
+          <folding>
+            <element signature="e#78#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm30/python_stubs/-1199943130/_sqlite3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="164" column="8" selection-start="4279" selection-end="4279" vertical-scroll-proportion="0.0" vertical-offset="2273" max-vertical-offset="15585">
@@ -656,32 +662,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/templates/show_entries.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="425" selection-end="425" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/core/hiragana">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="1" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="624" max-vertical-offset="1245">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/flaskr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="44" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1950">
-          <folding>
-            <element signature="e#78#87#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flaskr/kanji_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="40" selection-start="1663" selection-end="1663" vertical-scroll-proportion="1.7875648" vertical-offset="0" max-vertical-offset="1110">
+        <state line="96" column="24" selection-start="5081" selection-end="5081" vertical-scroll-proportion="3.2653062" vertical-offset="0" max-vertical-offset="1530">
           <folding />
         </state>
       </provider>
