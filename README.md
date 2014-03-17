@@ -1,4 +1,4 @@
-flask_project
+Japanese helper
 =============
 This is a web wrapper for the grammar application (kanji_tutor). 
 
