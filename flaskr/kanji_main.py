@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# coding=utf-8
+
 class Kanjies_text:
     def __init__(self, value):
         self.value = value
