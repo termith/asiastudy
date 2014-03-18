@@ -8,7 +8,6 @@ from sqlite3 import dbapi2 as sqlite3
 from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash
 from kanji_main import KanjiesText
-from static_data_for_application import AnalyzerData
 
 # create our little application
 app = Flask(__name__)
@@ -112,6 +111,9 @@ def login():
             flash('You were logged in')
             return redirect(url_for('show_entries'))
     return render_template('login.html', error=error)
+
+@app.route('/home', methods=['GET'])
+
 
 
 @app.route('/logout')
