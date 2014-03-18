@@ -1,13 +1,14 @@
 # -*- coding: utf-8 -*-
 """
-    Main file for Kanji analyzer application
+    Main file for Kanjies analyzer application
 """
 
 import os
 from sqlite3 import dbapi2 as sqlite3
 from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash
-from kanji_main import Kanjies_text
+from kanji_main import KanjiesText
+from static_data_for_application import AnalyzerData
 
 # create our little application
 app = Flask(__name__)
@@ -80,7 +81,7 @@ def add_entry():
     db.commit()
     flash('New entry was successfully posted')
 
-    a = Kanjies_text(show_part_db('text'))
+    a = KanjiesText(show_part_db('text'))
     a.remove_spaces_from_text()
     a.remove_kana_symbols()
     db.execute('update entries set clear_text = (?) where id=(select max(id) from entries)', [a.value])
