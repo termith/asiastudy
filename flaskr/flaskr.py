@@ -4,9 +4,7 @@
 """
 
 import os
-from sqlite3 import dbapi2 as sqlite3
-from flask import Flask, request, session, g, redirect, url_for, abort, \
-     render_template, flash
+from flask import Flask, request, redirect, url_for, render_template
 from kanji_main import KanjiesText
 
 # create our little application
@@ -36,4 +34,5 @@ def add_entry():
 
 
 if __name__ == '__main__':
-    app.run()
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)

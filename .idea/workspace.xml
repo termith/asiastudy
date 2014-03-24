@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="946ffcdf-1d1d-4dde-a5a5-8b0dce87de26" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/flaskr.py" afterPath="$PROJECT_DIR$/flaskr/flaskr.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/templates/layout.html" afterPath="$PROJECT_DIR$/flaskr/templates/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/templates/show_entries.html" afterPath="$PROJECT_DIR$/flaskr/templates/show_entries.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flask_project.iws" />
@@ -28,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="flaskr.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="flaskr.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flaskr/flaskr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="3" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.64044946" vertical-offset="0" max-vertical-offset="890">
+            <state line="7" column="34" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
               <folding>
                 <element signature="e#80#89#0" expanded="true" />
               </folding>
@@ -42,7 +40,7 @@
       <file leaf-file-name="layout.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flaskr/templates/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="25" selection-start="169" selection-end="169" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="225">
+            <state line="9" column="6" selection-start="311" selection-end="311" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="225">
               <folding />
             </state>
           </provider>
@@ -57,10 +55,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show_entries.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="show_entries.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flaskr/templates/show_entries.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="14" selection-start="650" selection-end="650" vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="375">
+            <state line="19" column="7" selection-start="643" selection-end="643" vertical-scroll-proportion="0.3290993" vertical-offset="0" max-vertical-offset="866">
               <folding />
             </state>
           </provider>
@@ -440,7 +438,11 @@
       <created>1395150593652</created>
       <updated>1395150593652</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="version 0.0.6&#10;&#10;Features:&#10;&#10;Bugs:&#10;&#10;Others:&#10;delete working with BD">
+      <created>1395658827292</created>
+      <updated>1395658827292</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -506,7 +508,8 @@
     <MESSAGE value="version 0.0.2 &#10;&#10;Features:&#10;&#10;Bugs:&#10;* add main core file&#10;&#10;Others:&#10;" />
     <MESSAGE value="version 0.0.3 &#10;&#10;Features:&#10;&#10;Bugs:&#10;&#10;Others:&#10;delete some codes strokes" />
     <MESSAGE value="version 0.0.5&#10;&#10;Features:&#10;&#10;Bugs:&#10;&#10;Others:&#10;add new class with constant" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 0.0.5&#10;&#10;Features:&#10;&#10;Bugs:&#10;&#10;Others:&#10;add new class with constant" />
+    <MESSAGE value="version 0.0.6&#10;&#10;Features:&#10;&#10;Bugs:&#10;&#10;Others:&#10;delete working with BD" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 0.0.6&#10;&#10;Features:&#10;&#10;Bugs:&#10;&#10;Others:&#10;delete working with BD" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -619,9 +622,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/flaskr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="34" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+          <folding>
+            <element signature="e#80#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/flaskr/templates/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="25" selection-start="169" selection-end="169" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="225">
+        <state line="9" column="6" selection-start="311" selection-end="311" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="225">
           <folding />
         </state>
       </provider>
@@ -635,17 +647,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flaskr/templates/show_entries.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="14" selection-start="650" selection-end="650" vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="375">
+        <state line="19" column="7" selection-start="643" selection-end="643" vertical-scroll-proportion="0.3290993" vertical-offset="0" max-vertical-offset="866">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/flaskr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="3" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.64044946" vertical-offset="0" max-vertical-offset="890">
-          <folding>
-            <element signature="e#80#89#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
