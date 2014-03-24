@@ -1,6 +1,5 @@
 {% extends "layout.html" %}
 {% block body %}
-  {% if session.logged_in %}
     <form action="{{ url_for('add_entry') }}" method=post class=add-entry>
       <dl>
         <dt>KanjiesText:
@@ -8,19 +7,14 @@
         <dd><input type=submit value=Analyze>
       </dl>
     </form>
-  {% endif %}
   <ul class=entries>
-  {% for entry in entries %}
     <li><h2> Your text is: </h2>
-    <h3>{{ entry.text }}</h3>
+    <h3>{{ analyzed_text }}</h3>
     <li><h2> List of kanjies: </h2>
-    <h3>N1: {{ entry.N1 | safe }}</h3>
-    <h3>N2: {{ entry.N2 | safe }}</h3>
-    <h3>N3: {{ entry.N3 | safe }}</h3>
-    <h3>N4: {{ entry.N4 | safe }}</h3>
-    <h3>N5: {{ entry.N5 | safe }}</h3>
-  {% else %}
-    <li><em>Unbelievable.  No entries here so far</em>
-  {% endfor %}
+    <h3>N1: {{ list_of_percents[0] }} </h3>
+    <h3>N2: {{ list_of_percents[1] }} </h3>
+    <h3>N3: {{ list_of_percents[2] }} </h3>
+    <h3>N4: {{ list_of_percents[3] }} </h3>
+    <h3>N5: {{ list_of_percents[4] }} </h3>
   </ul>
 {% endblock %}
