@@ -17,7 +17,7 @@ list_of_percents = []
 def show_entries():
     global analyzed_text
     global list_of_percents
-    return render_template('show_entries.html', analyzed_text = analyzed_text, list_of_percents = list_of_percents)
+    return render_template('show_entries.html', analyzed_text=analyzed_text, list_of_percents=list_of_percents)
 
 
 @app.route('/add', methods=['POST'])
