@@ -1,6 +1,7 @@
 {% extends "layout.html" %}
 {% block body %}
-    <form action="{{ url_for('add_entry') }}" method=post class=add-entry>
+   <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+   <form action="{{ url_for('add_entry') }}" method=post class=add-entry>
       <dl>
         <dt>KanjiesText:
         <dd><textarea name=text rows=5 cols=40></textarea>
@@ -11,10 +12,10 @@
     <li><h2> Your text is: </h2>
     <h3>{{ analyzed_text }}</h3>
     <li><h2> List of kanjies: </h2>
-    <h3>N1: {{ list_of_percents[0] }} </h3>
-    <h3>N2: {{ list_of_percents[1] }} </h3>
-    <h3>N3: {{ list_of_percents[2] }} </h3>
-    <h3>N4: {{ list_of_percents[3] }} </h3>
-    <h3>N5: {{ list_of_percents[4] }} </h3>
+    <h3>N1: {{ list_of_percents[0] }} {{ list_of_find_kanjies[0] }}</h3>
+    <h3>N2: {{ list_of_percents[1] }} {{ list_of_find_kanjies[1] }}</h3>
+    <h3>N3: {{ list_of_percents[2] }} {{ list_of_find_kanjies[2] }}</h3>
+    <h3>N4: {{ list_of_percents[3] }} {{ list_of_find_kanjies[3] }}</h3>
+    <h3>N5: {{ list_of_percents[4] }} {{ list_of_find_kanjies[4] }}</h3>
   </ul>
 {% endblock %}
