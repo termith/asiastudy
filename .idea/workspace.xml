@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="946ffcdf-1d1d-4dde-a5a5-8b0dce87de26" name="Default" comment="version 0.0.10&#10;&#10;Features:&#10;&#10;Bugs:&#10;&#10;Others:&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flaskr/static/images/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/future.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flaskr/test_kanjiesText.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/flask_project.iml" afterPath="$PROJECT_DIR$/.idea/flask_project.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/flaskr.py" afterPath="$PROJECT_DIR$/flaskr/flaskr.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/kanji_main.py" afterPath="$PROJECT_DIR$/flaskr/kanji_main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/templates/layout.html" afterPath="$PROJECT_DIR$/flaskr/templates/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/templates/show_entries.html" afterPath="$PROJECT_DIR$/flaskr/templates/show_entries.html" />
+    <list default="true" id="946ffcdf-1d1d-4dde-a5a5-8b0dce87de26" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flaskr/Procfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flask_project.iws" />
@@ -43,19 +35,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Procfile" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Procfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flaskr/Procfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="24" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+            <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="layout.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flaskr/templates/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="63" selection-end="63" vertical-scroll-proportion="0.06772009" vertical-offset="0" max-vertical-offset="443">
+            <state line="15" column="0" selection-start="549" selection-end="549" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="360">
               <folding />
             </state>
           </provider>
@@ -516,7 +508,11 @@
       <created>1395658827292</created>
       <updated>1395658827292</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="version 0.0.3003&#10;&#10;Features:&#10;&#10;Bugs:&#10;&#10;Others:&#10;Add js script + files for heroku">
+      <created>1396179297818</created>
+      <updated>1396179297818</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -543,6 +539,7 @@
     <frame x="2" y="-1058" width="1440" height="808" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289855" sideWeight="0.49964765" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947975" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32658958" sideWeight="0.49968925" order="6" side_tool="false" content_ui="tabs" />
@@ -557,7 +554,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962328" sideWeight="0.49972633" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.49964765" order="5" side_tool="false" content_ui="tabs" />
@@ -603,7 +599,8 @@
     <MESSAGE value="version 0.0.3 &#10;&#10;Features:&#10;&#10;Bugs:&#10;&#10;Others:&#10;delete some codes strokes" />
     <MESSAGE value="version 0.0.5&#10;&#10;Features:&#10;&#10;Bugs:&#10;&#10;Others:&#10;add new class with constant" />
     <MESSAGE value="version 0.0.6&#10;&#10;Features:&#10;&#10;Bugs:&#10;&#10;Others:&#10;delete working with BD" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 0.0.6&#10;&#10;Features:&#10;&#10;Bugs:&#10;&#10;Others:&#10;delete working with BD" />
+    <MESSAGE value="version 0.0.3003&#10;&#10;Features:&#10;&#10;Bugs:&#10;&#10;Others:&#10;Add js script + files for heroku" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 0.0.3003&#10;&#10;Features:&#10;&#10;Bugs:&#10;&#10;Others:&#10;Add js script + files for heroku" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -615,7 +612,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="0" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.0" vertical-offset="365" max-vertical-offset="840">
           <folding>
-            <element signature="e#80#89#0" expanded="true" />
+            <element signature="e#80#89#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -673,7 +670,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="3" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
           <folding>
-            <element signature="e#80#89#0" expanded="true" />
+            <element signature="e#80#89#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -708,7 +705,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="34" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="645">
           <folding>
-            <element signature="e#80#89#0" expanded="true" />
+            <element signature="e#80#89#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -743,7 +740,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="58" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="2010">
           <folding>
-            <element signature="e#80#89#0" expanded="true" />
+            <element signature="e#80#89#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -858,7 +855,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="44" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.0" vertical-offset="328" max-vertical-offset="795">
           <folding>
-            <element signature="e#80#89#0" expanded="true" />
+            <element signature="e#80#89#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -866,13 +863,6 @@
     <entry file="file://$PROJECT_DIR$/flaskr/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="505">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="24" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
           <folding />
         </state>
       </provider>
@@ -895,7 +885,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flaskr/templates/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="63" selection-end="63" vertical-scroll-proportion="0.06772009" vertical-offset="0" max-vertical-offset="443">
+        <state line="15" column="0" selection-start="549" selection-end="549" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
           <folding />
         </state>
       </provider>
