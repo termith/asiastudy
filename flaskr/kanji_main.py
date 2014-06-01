@@ -41,8 +41,11 @@ class KanjiesText:
         N2 = self.list_of_kanjies(AnalyzerData.KANJI_JLPT_2)
         N1 = self.list_of_kanjies(AnalyzerData.KANJI_JLPT_1)
         total = len(N1) + len(N2) + len(N3) + len(N4) + len(N5)
-        return [take_percent(total, len(N1)), take_percent(total, len(N2)), take_percent(total, len(N3)), take_percent(total, len(N4)),
+
+        list_result =  [take_percent(total, len(N1)), take_percent(total, len(N2)), take_percent(total, len(N3)), take_percent(total, len(N4)),
                 take_percent(total, len(N5))]
+
+        return list_result
 
     def each_level_kanji(self, kanji_level_list):
         kanjis_this_level = 0
@@ -61,7 +64,7 @@ class KanjiesText:
             for i in range(len(self)):
                 if items == self.value[i]:
                     list_kanjis_this_level.append(items)
-        return set(list_kanjis_this_level)
+        return list(set(list_kanjis_this_level))
 
     def list_find_kanjies(self):
         N1 = self.list_of_kanjies(AnalyzerData.KANJI_JLPT_1)
@@ -74,6 +77,6 @@ class KanjiesText:
 
 def take_percent(a, b):
     if b == 0:
-        return "This level has 0% kanjies."
+        return "0"
     else:
-        return "{0}%".format(round((b/a)*100))
+        return "{0}".format(round((b/a)*100))

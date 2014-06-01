@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Asiastudy</title>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+     <div id="main">
+        <div id="header">
+        <div id="menu_gor">
+            <ul class="menu">
+                <li><a href="{{ url_for('jlpt_view') }}">JLPT Study</a>
+                    <ul>
+                        <li><a href="">Level N1</a></li>
+                        <li><a href="">Level N2</a></li>
+                        <li><a href="">Level N3</a></li>
+                        <li><a href="">Level N4</a></li>
+                        <li><a href="">Level N5</a></li>
+                    </ul>
+                </li>
+                <li><a href="{{ url_for('applications_view')}}">Applications</a>
+                    <ul>
+                        <li><a href="{{ url_for('show_entries') }}">Kanji analyzer</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            <h1>TEXT SHOULD BE HERE</h1>
+        </div>
+        <div id="user"></div>
+            <div id="footer"></div>
+        </div>
+     </div>
+</body>
+</html>
+
