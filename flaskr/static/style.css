@@ -1,18 +1,219 @@
-body            { font-family: sans-serif; background: #eee; }
-a, h1, h2       { color: #377BA8; }
-h1, h2          { font-family: 'Georgia', serif; margin: 0; }
+body            {
+                    background: url(images/bg.gif);
+                    background-repeat: repeat;
+                    width: 1052px;
+                    font-family: Vrinda, Helvetica, sans-serif;
+                    margin: 0px auto;
+                }
+
+#main           {
+                    background: white;
+                    width:100%;
+                }
+
+#header         {
+                    width:100%;
+                    height:183px;
+                    background-image: url(images/header.gif);
+                    background-repeat: no-repeat;
+                }
+
+/* MENU description  start*/
+
+#menu_gor       {
+                    width:100%;
+                    height: 60px;
+                    top: 69px;
+                    position: relative;
+                }
+
+ul.menu         {
+                    float: right;
+                    margin: 0;
+                    padding: 0;
+                    display: inline-block;
+                    background-color: #2b2b2b;
+                    background-repeat: no-repeat;
+                    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5fbd6), to(#f9fce8));
+                    background-image: -webkit-linear-gradient(#f5fbd6, #f9fce8);
+                    background-image: -moz-linear-gradient(top, #f5fbd6, #f9fce8);
+                    background-image: -ms-linear-gradient(#f5fbd6, #f9fce8);
+                    background-image: -o-linear-gradient(#f5fbd6, #f9fce8);
+                    background-image: linear-gradient(#f5fbd6, #f5fbd6);
+                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5fbd6', endColorstr='#f9fce8', GradientType=0);
+                    width: 600px;
+                    list-style: none;
+
+                }
+
+ul.menu li      {
+                    float: left;
+                    list-style: none;
+                    border-right: 1px solid black;
+                    position: relative;
+                }
+
+ul.menu li a    {
+                    color: black;
+                    display: block;
+                    font-family: Vrinda;
+                    font-size: 18px;
+                    padding: 8px 20px 10px;
+                    text-decoration: none;
+}
+
+ul.menu li a:hover {
+	background-color: #f5fbd6;
+}
+
+ul.menu li:first-child a:hover {
+}
+/*Выпадающее меню*/
+
+ul.menu li ul {
+    padding: 0px;
+	margin-left: 0px;
+	display: none;
+}
+
+ul.menu li:hover ul {
+	display: block;
+	position: absolute;
+	top: 34px;
+	background-color: #f5fbd6;
+	z-index: 1000;
+	list-style: none;
+}
+
+ul.menu li:hover ul li {
+	list-style: none;
+	float: none;
+	width: 150px;
+	border-right: none;
+}
+
+ul.menu li:hover ul li a {
+	border-bottom: 1px solid black;
+	border-right: none;
+	padding: 6px 20px 8px;
+}
+
+ul.menu li:hover ul li a:hover {
+	background-color: transparent;
+	color: #c1deff;
+}
+
+ul.menu li:hover ul li:first-child a:hover {
+}
+/* MENU description  end*/
+
+#user           {
+                    width:20%;
+                    float:left;
+                }
+
+#content        {
+                    width:80%;
+                    float:right;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+
+#footer         {
+                    clear:both;
+                    width:100%;
+                    position: relative;
+                    margin-top: -150px; /* negative value of footer height */
+                    height: 120px;
+                    background-image: url(images/footer.gif);
+                    background-repeat: no-repeat;
+                }
+
+
+a, h1, h2       { color: red; }
+h1, h2          { font-family: 'Vrinda', serif; margin: 0; }
 h1              { border-bottom: 2px solid #eee; }
 h2              { font-size: 1.2em; }
 
-.page           { margin: 2em auto; width: 35em; border: 5px solid #ccc;
-                  padding: 0.8em; background: white; }
-.entries        { list-style: none; margin: 0; padding: 0; }
+
+
+
+progress        {
+                    border: 0;
+                    height: 12px;
+                }
+
+progress::-webkit-progress-bar {
+                    background-color: #CCCC99;
+                    border: 0;
+                    height: 12px;
+                    margin: 0px; 12px; 0px; 12px;
+                }
+
+progress::-webkit-progress-value {
+                    background-color: #FF0033;
+                    border: 0;
+                    height: 12px;
+                    margin: 0px; 12px; 0px; 12px;
+                }
+
+progress::-moz-progress-bar {
+                    background-color: #FF0033;
+                    border: 0;
+                    height: 12px;
+                    margin: 0px; 12px; 0px; 12px;
+                }
+
+#progress       {
+                    width: 200px;
+                    height:200px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    float: left;
+                }
+
+#page           {
+                    background: white;
+                }
+
+
+#allcontent     {
+                  width:            1px;
+                  padding-top:      5px;
+                  padding-bottom:   5px;
+                  margin-right:     auto;
+                  margin-left:      auto;
+                }
+
+/* Стиль для выделения иероглифов по уровням*/
+span.highlight {
+    color: #FFFFFF;
+    background-color: #0000CD;
+    }
+
+
+
+.entries        {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                }
 .entries li     { margin: 0.8em 1.2em; }
 .entries li h2  { margin-left: -1em; }
-.add-entry      { font-size: 0.9em; border-bottom: 1px solid #ccc; }
-.add-entry dl   { font-weight: bold; }
+
+.add-entry      { font-size: 1em; border-bottom: 1px solid #ccc;
+                }
+.add-entry textarea {
+                  background-color: #fffff0;
+                  font-size: 1em;
+                  border-bottom: 1px solid #ccc;;
+                  border-right: 1px solid #ccc;;
+                }
+
 .metanav        { text-align: right; font-size: 0.8em; padding: 0.3em;
-                  margin-bottom: 1em; background: #fafafa; }
-.flash          { background: #CEE5F5; padding: 0.5em;
+                  margin-bottom: 1em; background: white; }
+
+.flash          { background: white; padding: 0.5em;
                   border: 1px solid #AACBE2; }
+
 .error          { background: #F0D6D6; padding: 0.5em; }

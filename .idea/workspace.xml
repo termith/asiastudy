@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="946ffcdf-1d1d-4dde-a5a5-8b0dce87de26" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flaskr/static/images/bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flaskr/static/images/footer.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flaskr/static/images/header.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flaskr/templates/404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flaskr/templates/applications.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flaskr/templates/home.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flaskr/templates/jlpt.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/flaskr/runtime.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/flaskr/static/images/footer.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/flaskr/static/images/header_title.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/flaskr/templates/layout.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/kanji_main.py" afterPath="$PROJECT_DIR$/flaskr/kanji_main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/flaskr.py" afterPath="$PROJECT_DIR$/flaskr/flaskr.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/templates/show_entries.html" afterPath="$PROJECT_DIR$/flaskr/templates/show_entries.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/static/style.css" afterPath="$PROJECT_DIR$/flaskr/static/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flask_project.iws" />
@@ -42,7 +33,7 @@
       <file leaf-file-name="kanji_analyzer.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flaskr/templates/kanji_analyzer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="30" selection-start="615" selection-end="615" vertical-scroll-proportion="0.4375" vertical-offset="0" max-vertical-offset="1770">
+            <state line="41" column="25" selection-start="1706" selection-end="1706" vertical-scroll-proportion="0.1875" vertical-offset="525" max-vertical-offset="1755">
               <folding />
             </state>
           </provider>
@@ -123,8 +114,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="171" />
-    <option name="y" value="280" />
+    <option name="x" value="-2" />
+    <option name="y" value="1102" />
     <option name="width" value="1591" />
     <option name="height" value="808" />
   </component>
@@ -271,8 +262,8 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test project" />
+    <property name="options.lastSelected" value="settings.github" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../github_asiastudy" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -512,7 +503,11 @@
       <created>1397325950702</created>
       <updated>1397325950702</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="version 0.1.0106&#10;&#10;Features:&#10;Add color for jlpt level&#10;&#10;Bugs:&#10;&#10;Others:&#10;">
+      <created>1401618969435</created>
+      <updated>1401618969435</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -536,9 +531,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="171" y="280" width="1591" height="808" extended-state="0" />
-    <editor active="false" />
+    <frame x="-2" y="1102" width="1591" height="808" extended-state="0" />
+    <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289855" sideWeight="0.49964765" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282123" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32608697" sideWeight="0.49968925" order="6" side_tool="false" content_ui="tabs" />
@@ -546,14 +542,13 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22484076" sideWeight="0.7671233" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39739883" sideWeight="0.49964765" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22976878" sideWeight="0.5024665" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22067039" sideWeight="0.49753347" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22067039" sideWeight="0.50254774" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22067039" sideWeight="0.49745223" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13768116" sideWeight="0.49917987" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962328" sideWeight="0.49972633" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.49964765" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -603,7 +598,8 @@
     <MESSAGE value="version 0.0.3003&#10;&#10;Features:&#10;&#10;Bugs:&#10;&#10;Others:&#10;Add Procfile" />
     <MESSAGE value="version 0.0.1204&#10;&#10;Features:&#10;&#10;Bugs:&#10;&#10;Others:&#10;change css" />
     <MESSAGE value="version 0.0.1204&#10;&#10;Features:&#10;&#10;Bugs:&#10;&#10;Others:&#10;Add css style" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 0.0.1204&#10;&#10;Features:&#10;&#10;Bugs:&#10;&#10;Others:&#10;Add css style" />
+    <MESSAGE value="version 0.1.0106&#10;&#10;Features:&#10;Add color for jlpt level&#10;&#10;Bugs:&#10;&#10;Others:&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 0.1.0106&#10;&#10;Features:&#10;Add color for jlpt level&#10;&#10;Bugs:&#10;&#10;Others:&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -858,7 +854,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flaskr/templates/404.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="14" selection-start="241" selection-end="241" vertical-scroll-proportion="0.17751479" vertical-offset="0" max-vertical-offset="507" />
+        <state line="6" column="14" selection-start="241" selection-end="241" vertical-scroll-proportion="0.17751479" vertical-offset="0" max-vertical-offset="507">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flaskr/static/images/bg.gif">
@@ -917,7 +915,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flaskr/templates/kanji_analyzer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="30" selection-start="615" selection-end="615" vertical-scroll-proportion="0.4375" vertical-offset="0" max-vertical-offset="1770">
+        <state line="41" column="25" selection-start="1706" selection-end="1706" vertical-scroll-proportion="0.1875" vertical-offset="525" max-vertical-offset="1755">
           <folding />
         </state>
       </provider>

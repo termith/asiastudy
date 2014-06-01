@@ -1,20 +1,28 @@
-{% extends "layout.html" %}
+{% extends "kanji_analyzer.html" %}
 {% block body %}
-   <form action="{{ url_for('add_entry') }}" method=post class=add-entry>
+   <form action="{{ url_for('show_entries') }}" method=post class=add-entry>
       <dl>
-        <dt>KanjiesText:
-        <dd><textarea name=text rows=5 cols=40></textarea>
+        <dd><textarea id="textarea" name=text rows=10 cols=55 placeholder=" Enter your text here ..."></textarea>
         <dd><input type=submit value=Analyze>
+        <select>
+            <option disabled selected>Choose your JLPT level</option>
+            <option value="N1">N1</option>
+            <option value="N2">N2</option>
+            <option value="N3">N3</option>
+            <option value="N4">N4</option>
+            <option value="N5">N5</option>
+        </select>
       </dl>
+
     </form>
   <ul class=entries>
     <li><h2> Your text is: </h2>
     <h3>{{ analyzed_text }}</h3>
     <li><h2> List of kanjies: </h2>
-    <h3>N1: {{ list_of_percents[0] }} {{ list_of_find_kanjies[0] }}</h3>
-    <h3>N2: {{ list_of_percents[1] }} {{ list_of_find_kanjies[1] }}</h3>
-    <h3>N3: {{ list_of_percents[2] }} {{ list_of_find_kanjies[2] }}</h3>
-    <h3>N4: {{ list_of_percents[3] }} {{ list_of_find_kanjies[3] }}</h3>
-    <h3>N5: {{ list_of_percents[4] }} {{ list_of_find_kanjies[4] }}</h3>
+    <h3>N1: {{ list_of_percents[0] }}% {{ list_of_find_kanjies[0] }}</h3>
+    <h3>N2: {{ list_of_percents[1] }}% {{ list_of_find_kanjies[1] }}</h3>
+    <h3>N3: {{ list_of_percents[2] }}% {{ list_of_find_kanjies[2] }}</h3>
+    <h3>N4: {{ list_of_percents[3] }}% {{ list_of_find_kanjies[3] }}</h3>
+    <h3>N5: {{ list_of_percents[4] }}% {{ list_of_find_kanjies[4] }}</h3>
   </ul>
 {% endblock %}
