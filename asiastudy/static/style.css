@@ -112,11 +112,16 @@ ul.menu li:hover ul li:first-child a:hover {
                     float:left;
                 }
 
-#content        {
+.content, .kanjies_text
+                {
                     width:80%;
                     float:right;
                     margin-top: 10px;
                     margin-bottom: 10px;
+                }
+
+.kanjies_text   {
+
                 }
 
 #footer         {

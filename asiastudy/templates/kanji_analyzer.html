@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Asiastudy</title>
+        <meta http-equiv="content-type" content="text/html" charset="utf-8">
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="/js_scripts/color.js"></script>
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div id="main">
+            <div id="header">
+            <div id="menu_gor">
+                <ul class="menu">
+                    <li><a href="{{ url_for('jlpt_view') }}">JLPT Study</a>
+                        <ul>
+                            <li><a href="">Level N1</a></li>
+                            <li><a href="">Level N2</a></li>
+                            <li><a href="">Level N3</a></li>
+                            <li><a href="">Level N4</a></li>
+                            <li><a href="">Level N5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{{ url_for('applications_view') }}">Applications</a>
+                        <ul>
+                            <li><a href="{{ url_for('show_entries') }}">Kanji analyzer</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            <div id="content">
+                  <form>
+                    <input id="pattern" name="" value="вот поиск слов"><label> слова через пробел|ы</label><br>
+                    <input id="right" name="" type="checkbox"><label>точное совпадение</label><br>
+                    <input id="case" name="" type="checkbox"><label>зависит от регистра</label><br>
+                    <input id="remove" name="" type="checkbox"><label>не убирать предыдущее выделение</label><br>
+                    <input id="Analyze" name="" type="button" value="Analyze">
+                  </form>
+                <div id = "progress">
+                    N1: {{ list_of_percents[0] }}%<br>
+                    <progress max="100" value="{{ list_of_percents[0] }}">N1</progress><br>
+                    N2: {{ list_of_percents[1] }}%<br>
+                    <progress max="100" value="{{ list_of_percents[1] }}">N2</progress><br>
+                    N3: {{ list_of_percents[2] }}%<br>
+                    <progress max="100" value="{{ list_of_percents[2] }}">N3</progress><br>
+                    N4: {{ list_of_percents[3] }}%<br>
+                    <progress max="100" value="{{ list_of_percents[3] }}">N4</progress><br>
+                    N5: {{ list_of_percents[4] }}%<br>
+                    <progress max="100" value="{{ list_of_percents[4] }}">N5</progress><br>
+                </div>
+            <div class=page>
+                {% block body %}{% endblock %}
+            </div>
+            </div>
+            <div id="user">
+            </div>
+            <div id="footer"></div>
+        </div>
+   </body>
+</html>
