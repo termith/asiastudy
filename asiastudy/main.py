@@ -5,9 +5,9 @@
 
 import os
 from flask import Flask, request, redirect, url_for, render_template, send_from_directory
-from kanji_main import KanjiesText
+from kanji_analyzer import KanjiesText
 
-# create our little application
+#App start
 app = Flask(__name__)
 
 analyzed_text = 'Please enter your text and then press key.'
@@ -15,7 +15,6 @@ list_of_percents = []
 list_of_find_kanjies = []
 
 # pages routing
-
 # home page
 @app.route('/')
 def home_view():

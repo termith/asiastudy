@@ -41,7 +41,6 @@ class KanjiesText:
         N2 = self.list_of_kanjies(AnalyzerData.KANJI_JLPT_2)
         N1 = self.list_of_kanjies(AnalyzerData.KANJI_JLPT_1)
         total = len(N1) + len(N2) + len(N3) + len(N4) + len(N5)
-
         list_result =  [take_percent(total, len(N1)), take_percent(total, len(N2)), take_percent(total, len(N3)), take_percent(total, len(N4)),
                 take_percent(total, len(N5))]
 
