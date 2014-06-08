@@ -32,7 +32,7 @@ def jlpt_view():
 def applications_view():
     return render_template('applications.html')
 
-#kanji analyzer
+#Application/kanji analyzer
 @app.route('/applications/kanji_analyzer')
 def show_entries():
     global analyzed_text
